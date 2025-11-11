@@ -1,0 +1,29 @@
+# Node modules
+node_modules/
+**/node_modules/
+
+# Build output
+dist/
+build/
+.next/
+out/
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+
+# Coverage
+coverage/
+*.lcov
+
+# Optional caches
+.cache/
+.tmp/

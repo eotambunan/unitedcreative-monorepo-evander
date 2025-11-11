@@ -1,0 +1,18 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type RegistrationOutput {
+  count: Float!
+  totalValue: Float!
+}
+
+type DepositOutput {
+  count: Float!
+  totalValue: Float!
+}
+
+type Query {
+  findRegistrationSummary(filterMonth: String!, filterYear: String!): RegistrationOutput
+  findDepositSummary(filterMonth: String!, filterYear: String!): DepositOutput
+}

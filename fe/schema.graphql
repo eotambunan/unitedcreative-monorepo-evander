@@ -1,0 +1,18 @@
+schema {
+  query: Query
+}
+
+type DepositOutput {
+  count: Float!
+  totalValue: Float!
+}
+
+type Query {
+  findDepositSummary(filterMonth: String!, filterYear: String!): DepositOutput
+  findRegistrationSummary(filterMonth: String!, filterYear: String!): RegistrationOutput
+}
+
+type RegistrationOutput {
+  count: Float!
+  totalValue: Float!
+}

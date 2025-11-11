@@ -1,0 +1,16 @@
+query getBeMasterData($filterYear: String!, $filterMonth: String!) {
+    findRegistrationSummary(
+        filterYear: $filterYear
+        filterMonth: $filterMonth
+    ) {
+        count
+        totalValue
+    }
+    findDepositSummary(
+        filterYear: $filterYear
+        filterMonth: $filterMonth
+    ) {
+        count
+        totalValue
+    }
+}
